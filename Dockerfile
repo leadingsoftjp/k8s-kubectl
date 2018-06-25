@@ -12,5 +12,4 @@ RUN apk add --update ca-certificates \
  && rm /var/cache/apk/*
 
 WORKDIR /root
-ENTRYPOINT ["kubectl"]
-CMD ["help"]
+CMD ["/bin/sh"]
